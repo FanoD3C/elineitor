@@ -239,3 +239,11 @@
   });
 
 })()
+
+// INSTAGRAM FEED
+var feed = new Instafeed({
+  accessToken: 'IGQVJVOTYtUVVlLTRCS0dxeDZAybTVUZAVduYW9kbzl1ZAWtvNllMdmRibGE1NDU5VTVDOHd5R3UxZAldBbVBtQ2tDdWE5ZAmN2Tnl1V0VmUDAxNlpZARTR6dElBbWxRU2N2ZAEZAfaU1VbDNOMlQtaUdxUDMtVQZDZD',
+  limit: 12,
+  template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>'
+});
+feed.run();
