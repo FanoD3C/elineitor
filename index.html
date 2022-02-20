@@ -468,7 +468,7 @@
 
         <div class="row justify-content-center">
 
-          <div class="col-lg-6 col-md-12" data-aos="zoom-in">
+          <div class="col-lg-8 col-md-12" data-aos="zoom-in">
             <div class="member">
               <img src="assets/img/team/perfil-profesional.png" alt="">
               <h3><strong>Elizabeth Cabezas</strong></h3>
@@ -482,18 +482,14 @@
               <h1> INSTAFEED AQUI </h1>
               <div class="photo-gallery">
                 <div class="container">
-                  <!-- INTRO AL INSTAFEED -->
-                  <div class="intro">
-                    <h2 class="text-center"> Encuentrame en instagram </h2>
-                  </div>
-                  <div id="instafeed"></div>
-                  
-                  <div class="row photos">
-                    <div class="col-sm-6 col-md-4 col-lg-3 item"></div>
-                  </div>
+                    <div class="intro">
+                        <p class="text-center">Sigueme en instagram</p>
+                    </div>
+                    <div id="instafeed" class="row photos">
+                        
+                    </div>
                 </div>
-
-              </div>
+            </div>
 
 
               <div class="social">
@@ -736,7 +732,15 @@
   <script src="assets/js/main.js"></script>
 
   <!-- InstagramFeed -->
-  <script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
+  <script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+  <script>
+    var feed = new Instafeed({
+      accessToken: 'IGQVJVOTYtUVVlLTRCS0dxeDZAybTVUZAVduYW9kbzl1ZAWtvNllMdmRibGE1NDU5VTVDOHd5R3UxZAldBbVBtQ2tDdWE5ZAmN2Tnl1V0VmUDAxNlpZARTR6dElBbWxRU2N2ZAEZAfaU1VbDNOMlQtaUdxUDMtVQZDZD',
+      limit: 12,
+      template: '<div class="instamatrix col-4 add-5 cc-box" style="display:inline-block;"><a href="http://instagram.com/{{model.user.username}}" target="_blank">{{model.user.username}}<\/a><a href="{{link}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="w-100"/><\/a><\/div>'
+      });
+    feed.run();
+  </script>
 </body>
 
 </html>
