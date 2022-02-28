@@ -489,6 +489,7 @@
               <hr>
               <h1> INSTAFEED AQUI </h1>
               <div id="instafeed" class="owl-carousel owl-lazy owl-theme owl-loading owl-stage owl-drag img-instafeed">
+            
               </div>
               
 
@@ -773,23 +774,26 @@
 	<script src="assets/js/owl.carousel.min.js"></script>
   <!-- InstagramFeed -->
   <script type="text/javascript" src="assets/js/instafeed.min.js"></script>
-   <script>
+   <!-- <script>
     var feed = new Instafeed({
       accessToken: 'IGQVJVOTYtUVVlLTRCS0dxeDZAybTVUZAVduYW9kbzl1ZAWtvNllMdmRibGE1NDU5VTVDOHd5R3UxZAldBbVBtQ2tDdWE5ZAmN2Tnl1V0VmUDAxNlpZARTR6dElBbWxRU2N2ZAEZAfaU1VbDNOMlQtaUdxUDMtVQZDZD',
       get: 'user',
 		  userId: '44782484749', 
       limit: 12,
-      template: '<div class="item center col-lg-12 col-md-6 col-xs-6 thumb"><a href="{{link}}"><img title="{{caption}}" src="{{image}}"  /></a> </div>',
+      template: '<div class="img-instafeed center col-lg-12 col-md-6 col-xs-6 thumb"><a href="{{link}}"><img class="lazyOwl" title="{{caption}}" src="{{image}}" data-src="{{caption}}"  /></a> </div>',
 			after: function(){
         $('.owl-carousel').owlCarousel({
 					loop:true,
-          lazyLoad:true,
+          // lazyLoad:true,
           autoplay:true,
           autoplayTimeout:4000,
           autoplayHoverPause:true,
+          // itemsDesktop: [1199, 3],
+          // itemsDesktopSmall: [979, 3],
 					margin:10,
-					nav:true,
-          navText:['<','>'],
+          dots: true,
+				  //	nav:true,
+          // navText:['<','>'],
 					responsiveClass:true,
 					responsive:{
 						0:{
@@ -797,7 +801,8 @@
 							
 						},
 						600:{
-							items:3
+							items:3,
+              loop:true
 							
 						},
 						1000:{
@@ -809,7 +814,7 @@
 			}
     });
     feed.run();
-  </script>
+  </script> -->
 </body>
 
 </html>
