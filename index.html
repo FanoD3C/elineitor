@@ -478,7 +478,7 @@
 
           <div class="col-12 col-md-12 col-lg-8" data-aos="zoom-in">
             <div class="member">
-              <img class="perfil-card"src="assets/img/team/perfil-profesional.png" alt="">
+              <img class="img-profesional"src="assets/img/team/perfil-profesional.png" alt="">
               <h3><strong>Elizabeth Cabezas</strong></h3>
               <span>Manicurista Profesional</span>
               <p> 
@@ -488,7 +488,7 @@
               <!-- ===== Instafeed ===== -->
               <hr>
               <h1> INSTAFEED AQUI </h1>
-              <div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag insta-img">
+              <div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag">
               </div>
               
 
@@ -779,7 +779,7 @@
       get: 'user',
 		  userId: '44782484749', 
       limit: 12,
-      template: '<div class="item col-lg-8 col-md-6 col-xs-6 thumb"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a> </div>',
+      template: '<div class="items center col-lg-12 col-md-6 col-xs-6 thumb img-instafeed" style="border-radius:100%;"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a> </div>',
 			after: function(){
         $('.owl-carousel').owlCarousel({
 					loop:true,
@@ -788,7 +788,7 @@
 					responsiveClass:true,
 					responsive:{
 						0:{
-							items:1
+							items:2
 							
 						},
 						600:{
@@ -796,7 +796,7 @@
 							
 						},
 						1000:{
-							items:5,							
+							items:3,							
 							loop:true
 						}
 					}
