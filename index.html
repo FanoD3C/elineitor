@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -43,7 +43,7 @@
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between p-2">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">elineitor@elineitor.com</a>
@@ -488,7 +488,7 @@
               <!-- ===== Instafeed ===== -->
               <hr>
               <h1> INSTAFEED AQUI </h1>
-              <div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag">
+              <div id="instafeed" class="owl-carousel owl-lazy owl-theme owl-loading owl-stage owl-drag img-instafeed">
               </div>
               
 
@@ -779,12 +779,17 @@
       get: 'user',
 		  userId: '44782484749', 
       limit: 12,
-      template: '<div class="items center col-lg-12 col-md-6 col-xs-6 thumb img-instafeed" style="border-radius:100%;"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a> </div>',
+      template: '<div class="item center col-lg-12 col-md-6 col-xs-6 thumb"><a href="{{link}}"><img title="{{caption}}" src="{{image}}"  /></a> </div>',
 			after: function(){
         $('.owl-carousel').owlCarousel({
 					loop:true,
+          lazyLoad:true,
+          autoplay:true,
+          autoplayTimeout:4000,
+          autoplayHoverPause:true,
 					margin:10,
-					nav:false,
+					nav:true,
+          navText:['<','>'],
 					responsiveClass:true,
 					responsive:{
 						0:{
