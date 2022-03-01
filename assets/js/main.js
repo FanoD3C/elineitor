@@ -240,8 +240,8 @@
 
 })();
 
-console.log(document.getElementById("instafeed"));
-let insta =  document.getElementById("instafeed");
+
+
   var feed = new Instafeed({
     accessToken: 'IGQVJVOTYtUVVlLTRCS0dxeDZAybTVUZAVduYW9kbzl1ZAWtvNllMdmRibGE1NDU5VTVDOHd5R3UxZAldBbVBtQ2tDdWE5ZAmN2Tnl1V0VmUDAxNlpZARTR6dElBbWxRU2N2ZAEZAfaU1VbDNOMlQtaUdxUDMtVQZDZD',
     get: 'user',
@@ -281,4 +281,4 @@ let insta =  document.getElementById("instafeed");
     }
   });
   feed.run();
-insta.run();
+console.log(feed)
