@@ -1,2 +1,7 @@
-Fully working PHP/AJAX contact form script is available in the pro version of the template.
-You can buy it from: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
+plantilla bootstrap sacada desde boostrapmade (20-02-2022)
+reduciendo codigo (20-02-2022)
+agregando owlcarousel simple (26-02-2022)
+usando aos (27-02-2022)
+agregando instafeed (28-02-2022)
+agregando funcionalidad al formulario de contacto con formSubmit(simple) (01-03-2022)
+sacando validate.js por ahora no lo usare (01-03-2022)
