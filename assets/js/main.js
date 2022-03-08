@@ -254,10 +254,7 @@
 //   }
 // }
 
-<<<<<<< HEAD
 // INSTAFEED
-=======
->>>>>>> e881a8b5fdd9ad4e7491f57727a46c4f6999d36e
 //   let feed = new Instafeed({
 //     accessToken: 'IGQVJVOTYtUVVlLTRCS0dxeDZAybTVUZAVduYW9kbzl1ZAWtvNllMdmRibGE1NDU5VTVDOHd5R3UxZAldBbVBtQ2tDdWE5ZAmN2Tnl1V0VmUDAxNlpZARTR6dElBbWxRU2N2ZAEZAfaU1VbDNOMlQtaUdxUDMtVQZDZD',
 //     get: 'user',
@@ -298,8 +295,5 @@
 //   });
 //   feed.run();
 // console.log(feed)
-<<<<<<< HEAD
 
 
-=======
->>>>>>> e881a8b5fdd9ad4e7491f57727a46c4f6999d36e
