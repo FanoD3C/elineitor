@@ -1,4 +1,4 @@
-"use strict"
+
 let feed = new Instafeed({
     accessToken: 'IGQVJVOTYtUVVlLTRCS0dxeDZAybTVUZAVduYW9kbzl1ZAWtvNllMdmRibGE1NDU5VTVDOHd5R3UxZAldBbVBtQ2tDdWE5ZAmN2Tnl1V0VmUDAxNlpZARTR6dElBbWxRU2N2ZAEZAfaU1VbDNOMlQtaUdxUDMtVQZDZD',
     get: 'user',
